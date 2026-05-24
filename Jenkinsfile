@@ -3,13 +3,19 @@ pipeline {
 
 	stages{
 		stage('Dev') {
-			echo "Dev"
+			steps {
+				echo "Dev"
+			}
 		}
 		stage('Test') {
-			echo "Integration Test"
+			steps {
+				echo "Integration Test"
+			}
 		}
 		stage('Prod') {
-			echo "Prod"
+			steps {
+				echo "Prod"
+			}
 		}
 	}
 }
